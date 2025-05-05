@@ -1,0 +1,98 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #37352F; /* Notion default text */
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.tracker {
+  max-width: 700px; /* reduced width */
+  margin: 0 auto;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.tracker h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #37352F;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 6px 8px; /* reduced spacing */
+  text-align: center;
+  border-bottom: 1px solid #E3E3E0;
+  font-size: 13px;
+}
+
+thead th {
+  background-color: #F1F1EF;
+  font-size: 12px;
+  font-weight: 600;
+  color: #787774;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+  width: 240px; /* increased from 220px */
+  white-space: normal;
+  padding-right: 12px; /* ✅ adds spacing between text and checkboxes */
+}
+
+tfoot td {
+  padding-top: 12px;
+}
+
+#weekly-bar-container {
+  background: #ddd;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 4px 0;
+}
+
+#weekly-bar {
+  height: 100%;
+  background: #448361;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.habit-time {
+  font-size: 11px;
+  color: #787774;
+  margin-bottom: 1px;
+}
+
+.habit-task {
+  font-size: 13px;
+  font-weight: 500;
+  color: #37352F;
+}
+
+input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #448361;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:disabled {
+  accent-color: #DADAD7;
+}
+
+.highlight-col {
+  background-color: #fce588 !important;
+}
